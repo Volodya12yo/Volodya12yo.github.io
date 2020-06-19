@@ -109,11 +109,13 @@ body{
 /*-----section standart-----*/
 .standart{
   background: #F6F6F8;
-  height: 590px;
+  min-height: 590px;
   display: flex;
   justify-content: center;
   padding-top: 100px;
   padding-bottom: 100px;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 .standart-txt-box{
   margin-right: 121px;
@@ -131,7 +133,7 @@ color: #4985FF;
   grid-template-columns: 34% 34% 34%;
   grid-template-rows: 50% 50%;
 }
-.img-gallery{
+.img-gallery>img{
   width: 100%;
   height: 100%;
 }
@@ -152,4 +154,37 @@ color: #4985FF;
   100%{
   transform: translateX(-30px);
   }
+}
+/******подстраивание под устройства****/
+@media (max-width: 930px) and (min-width: 700px){
+  .standart{
+    background: red;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+}
+.standart>img{
+  width: 500px;
+  height: 400px;
+  margin-top: 5%;
+}
+.standart-txt-box{
+  margin-right: 0;
+}
+}
+@media (max-width: 699px) and (min-width: 300px){
+  .standart{
+    background: green;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+}
+.standart>img{
+  width: 500px;
+  height: 400px;
+  margin-top: 5%;
+}
+.standart-txt-box{
+  margin-right: 0;
+}
 }
