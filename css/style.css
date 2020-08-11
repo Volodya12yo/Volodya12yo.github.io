@@ -14,6 +14,7 @@ body{
   height: 900px;
   background: url(../img/a.jpg); center no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   color:white;
 }
 .menu{
@@ -130,7 +131,7 @@ color: #4985FF;
 /*-----section standart-----*/
 .gallery{
   display: grid;
-  grid-template-columns: 34% 34% 34%;
+  grid-template-columns: 33% 34% 34%;
   grid-template-rows: 50% 50%;
 }
 .img-gallery>img{
@@ -195,4 +196,7 @@ color: #4985FF;
 .box{
 margin-bottom: 55px;
 }
+}
+#test{
+  height: 500px;
 }
